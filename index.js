@@ -32,7 +32,7 @@ class TypeformEmbed extends Component {
 
   onMessage = event => {
     const { data } = event.nativeEvent;
-    if (data === "onSubmit") return this.props.onSubmit();
+    if (data === "onSubmit") return this.props.onSubmit(event);
     if (data === "onClose") return this.props.onClose();
   };
 
